@@ -37,7 +37,7 @@ Once Hashids is installed you need to register the service provider with the app
 Run this on the command line from the root of your project:
 
 ~~~
-$ php artisan vendor:publish
+$ php artisan config:publish alexanderzon/laravel-hashids
 ~~~
 
 A configuration file will be publish to `config/laravel-hashids.php`.
