@@ -1,4 +1,4 @@
-<?php namespace AlexanderZon\Hashids;
+<?php namespace Alexanderzon\Hashids;
 
 use Hashids\Hashids;
 use Illuminate\Support\ServiceProvider;
@@ -18,7 +18,7 @@ class HashidsServiceProvider extends ServiceProvider {
         ]);
 
 		// Add 'Assets' facade alias
-		AliasLoader::getInstance()->alias('Hashids', 'AlexanderZon\Hashids\Facade');
+		AliasLoader::getInstance()->alias('Hashids', 'Alexanderzon\Hashids\Facade');
 	}
 
 	/**

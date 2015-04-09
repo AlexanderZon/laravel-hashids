@@ -1,4 +1,4 @@
-<?php namespace AlexanderZon\Hashids;
+<?php namespace Alexanderzon\Hashids;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 

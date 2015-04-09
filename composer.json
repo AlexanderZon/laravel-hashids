@@ -21,12 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-          "AlexanderZon\\Hashids\\": "src/AlexanderZon/Hashids"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0-dev"
+          "Alexanderzon\\Hashids\\": "src/Alexanderzon/Hashids"
         }
     },
     "minimum-stability": "dev"
