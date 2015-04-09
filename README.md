@@ -1,6 +1,6 @@
 # Hashids for Laravel 5
 
-[![Latest Stable Version](https://poser.pugx.org/torann/hashids/v/stable.png)](https://packagist.org/packages/torann/hashids) [![Total Downloads](https://poser.pugx.org/torann/hashids/downloads.png)](https://packagist.org/packages/torann/hashids)
+[![Latest Stable Version](https://poser.pugx.org/alexanderzon/laravel-hashids/v/stable.png)](https://packagist.org/packages/alexanderzon/laravel-hashids) [![Total Downloads](https://poser.pugx.org/alexanderzon/laravel-hashids/downloads.png)](https://packagist.org/packages/alexanderzon/laravel-hashids)
 
 This package uses the classes created by [hashids.org](http://www.hashids.org/ "http://www.hashids.org/")
 
@@ -10,14 +10,14 @@ Generate hashes from numbers, like YouTube or Bitly. Use hashids when you do not
 
 ## Installation
 
-- [Hashids on Packagist](https://packagist.org/packages/torann/hashids)
-- [Hashids on GitHub](https://github.com/torann/laravel-hashids)
+- [Hashids on Packagist](https://packagist.org/packages/alexanderzon/laravel-hashids)
+- [Hashids on GitHub](https://github.com/alexanderzon/laravel-hashids)
 - [Laravel 4 Installation](#user-content-laravel-4-installation)
 
 To get the latest version of Hashids simply require it in your `composer.json` file.
 
 ~~~
-"torann/hashids": "2.0.*@dev"
+"alexanderzon/laravel-hashids": "2.0.*@dev"
 ~~~
 
 You'll then need to run `composer install` to download it and have the autoloader updated.
@@ -26,7 +26,7 @@ Once Hashids is installed you need to register the service provider with the app
 
 
 ```php
-'Torann\Hashids\HashidsServiceProvider'
+'AlexanderZon\Hashids\HashidsServiceProvider'
 ```
 
 > There is no need to add the Facade, the package will add it for you.
@@ -40,7 +40,7 @@ Run this on the command line from the root of your project:
 $ php artisan vendor:publish
 ~~~
 
-A configuration file will be publish to `config/hashids.php`.
+A configuration file will be publish to `config/laravel-hashids.php`.
 
 
 ## Laravel 4 Installation
@@ -48,10 +48,10 @@ A configuration file will be publish to `config/hashids.php`.
 Add verison 1.0 of Hashids in your `composer.json` file.
 
 ~~~
-"torann/hashids": "1.0.*"
+"alexanderzon/laravel-hashids": "1.0.*"
 ~~~
 
-And following the directions in the [README](https://github.com/Torann/laravel-hashids/tree/1.0.0) on version 1.0.
+And following the directions in the [README](https://github.com/AlexanderZon/laravel-hashids/tree/1.0.0) on version 1.0.
 
 ## Usage
 
@@ -77,8 +77,7 @@ Hashids::encode(1, 21, 12, 12, 666); // Returns MMtaUpSGhdA
 Hashids::decode(Ri7Bi);
 
 // Returns
-array (size=1)
-0 => int 1
+int 1
 ```
 
 or multiple..
