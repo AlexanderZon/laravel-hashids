@@ -14,7 +14,7 @@ class HashidsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		// Register the package namespace
-		$this->package('alexanderzon/hashids');
+		$this->package('alexanderzon/laravel-hashids');
 
 		// Add 'Assets' facade alias
 		AliasLoader::getInstance()->alias('Hashids', 'Alexanderzon\Hashids\Facade');
@@ -31,7 +31,7 @@ class HashidsServiceProvider extends ServiceProvider {
 		$this->app->singleton('hashids', function($app)
 		{
 			// Read settings from config file
-			$config = $app->config->get('hashids::config', array());
+			$config = $app->config->get('laravel-hashids::config', array());
 
            	return new Hashids($config['salt'], $config['length'], $config['alphabet']);
 		});
