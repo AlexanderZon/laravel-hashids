@@ -17,7 +17,7 @@ Generate hashes from numbers, like YouTube or Bitly. Use hashids when you do not
 To get the latest version of Hashids simply require it in your `composer.json` file.
 
 ~~~
-"alexanderzon/laravel-hashids": "2.0.*@dev"
+"alexanderzon/laravel-hashids": "dev-master"
 ~~~
 
 You'll then need to run `composer install` to download it and have the autoloader updated.
