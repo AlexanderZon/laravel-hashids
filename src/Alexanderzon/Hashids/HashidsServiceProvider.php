@@ -14,7 +14,7 @@ class HashidsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		// Register the package namespace
-		$this->package('torann/hashids');
+		$this->package('alexanderzon/hashids');
 
 		// Add 'Assets' facade alias
 		AliasLoader::getInstance()->alias('Hashids', 'Alexanderzon\Hashids\Facade');
