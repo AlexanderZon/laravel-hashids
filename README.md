@@ -48,7 +48,7 @@ A configuration file will be publish to `config/laravel-hashids.php`.
 Add verison 1.0 of Hashids in your `composer.json` file.
 
 ~~~
-"alexanderzon/laravel-hashids": "1.0.*"
+"alexanderzon/laravel-hashids": "3.0.*"
 ~~~
 
 And following the directions in the [README](https://github.com/AlexanderZon/laravel-hashids/tree/1.0.0) on version 1.0.
